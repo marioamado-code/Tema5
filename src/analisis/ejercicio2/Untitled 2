@@ -1,0 +1,34 @@
+abstract class Ficha
+	-int numero
+	-String titulo
+	+Ficha(int numero,String titulo)
+	+getNumero
+	+getTitulo
+	+String toString()
+	abstract void prestar()
+class Libro extends Ficha
+	-String autor
+	-String editorial
+	+Libro(String autor,String editorial)
+	+getAutor
+	+getEditorial
+	+super to string
+	void prestar()
+class DVD extends Ficha
+	-String director
+	-int año
+	-enum tipo{PELICULA,DOCUMENTAL,SERIE}		
+	+DVD(String director,int año,DVD tipo)
+	+getDirector
+	+getAño
+	+super to string
+	void prestar()
+class Revista extends Ficha
+	-int numero
+	-int año
+	+Revista(int numero,int año)
+	+getNumero
+	+getAño
+	+super to string
+	void prestar()
+class main
